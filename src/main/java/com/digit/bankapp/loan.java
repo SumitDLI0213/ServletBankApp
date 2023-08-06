@@ -55,13 +55,13 @@ public class loan extends HttpServlet
                 session.setAttribute("interest", resultset.getFloat("interest"));
                 session.setAttribute("description", resultset.getString("description"));
 
-                resp.sendRedirect("/BankingApplication/loandetails.jsp");
+                resp.sendRedirect("/ServletBankApp/loandetails.jsp");
 
             }
 
             else {
 
-                resp.sendRedirect("/BankingApplication/loandetailsfail.html");
+                resp.sendRedirect("/ServletBankApp/loandetailsfail.html");
             }
         }
 

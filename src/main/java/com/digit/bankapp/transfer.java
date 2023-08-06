@@ -100,38 +100,38 @@ public class transfer extends HttpServlet
                                  int x3=pstmt.executeUpdate();
                                  if(x3>0)
                                  {
-                                     resp.sendRedirect("/BankingApplication/transfersucces.html"); 
+                                     resp.sendRedirect("/ServletBankApp/transfersucces.html"); 
                                  }
                                  else
                                  {
-                                     resp.sendRedirect("/BankingApplication/transferfail.jsp"); 
+                                     resp.sendRedirect("/ServletBankApp/transferfail.jsp"); 
                                  }
 
                              }
                              else
                              {
-                                 resp.sendRedirect("/BankingApplication/transferfail.jsp"); 
+                                 resp.sendRedirect("/ServletBankApp/transferfail.jsp"); 
                              }
                          }
                          else
                          {
-                             resp.sendRedirect("/BankingApplication/transferfail.jsp"); 
+                             resp.sendRedirect("/ServletBankApp/transferfail.jsp"); 
                          }
                      }
                      else
                      {
-                         resp.sendRedirect("/BankingApplication/transferfail.jsp"); 
+                         resp.sendRedirect("/ServletBankApp/transferfail.jsp"); 
                      }
                  }
                  else
                  {
-                     resp.sendRedirect("/BankingApplication/transferfail.jsp"); 
+                     resp.sendRedirect("/ServletBankApp/transferfail.jsp"); 
                  }
              }
 
              else 
              {
-                 resp.sendRedirect("/BankingApplication/transferfail.jsp"); 
+                 resp.sendRedirect("/ServletBankApp/transferfail.jsp"); 
              }
          }
 

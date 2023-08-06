@@ -18,7 +18,7 @@ public class logout extends HttpServlet
      {
     	 session=req.getSession();
     	 session.invalidate();
-         resp.sendRedirect("/BankingApplication/welcome.html");
+         resp.sendRedirect("/ServletBankApp/welcome.html");
 
     }
 }

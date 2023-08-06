@@ -54,13 +54,13 @@ public class changepassword extends HttpServlet
                   int x = pstmt.executeUpdate();
                   if(x>0) {
 //                      session.setAttribute("newpassword", resultset.getString("newpassword"));
-                      resp.sendRedirect("/BankingApplication/passwordchangesucess.html");
+                      resp.sendRedirect("/ServletBankApp/passwordchangesucess.html");
 
                   }
 
                   else {
 
-                      resp.sendRedirect("/BankingApplication/passwordchangefail.html");
+                      resp.sendRedirect("/ServletBankApp/passwordchangefail.html");
                   }
             	  
               }

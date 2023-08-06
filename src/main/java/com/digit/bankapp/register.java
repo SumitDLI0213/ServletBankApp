@@ -87,13 +87,13 @@ public class register extends HttpServlet
 
              if(x>0) {
 
-                 resp.sendRedirect("/BankingApplication/registersucces.html");
+                 resp.sendRedirect("/ServletBankApp/registersucces.html");
 
              }
 
              else {
 
-                 resp.sendRedirect("/BankingApplication/registerfail.html");
+                 resp.sendRedirect("/ServletBankApp/registerfail.html");
 
              }
 

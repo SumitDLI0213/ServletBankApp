@@ -49,13 +49,13 @@ protected void service(HttpServletRequest req, HttpServletResponse resp) throws 
 
            if(resultset.next()==true) {
                session.setAttribute("balance", resultset.getInt("balance"));
-               resp.sendRedirect("/BankingApplication/balance.jsp");
+               resp.sendRedirect("/ServletBankApp/balance.jsp");
 
            }
 
            else {
 
-               resp.sendRedirect("/BankingApplication/balancefail.jsp");
+               resp.sendRedirect("/ServletBankApp/balancefail.jsp");
            }
        }
 
