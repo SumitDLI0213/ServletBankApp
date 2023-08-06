@@ -49,13 +49,13 @@ public class login extends HttpServlet
              if(resultset.next()==true) {
                  session.setAttribute("accno", resultset.getInt("accno"));
                  session.setAttribute("cust_name", resultset.getString("cust_name"));
-                 resp.sendRedirect("/BankingApplication/homepage.jsp");
+                 resp.sendRedirect("/ServletBankApp/homepage.jsp");
 
              }
 
              else {
 
-                 resp.sendRedirect("/BankingApplication/loginfail.html");
+                 resp.sendRedirect("/ServletBankApp/loginfail.html");
              }
          }
 
